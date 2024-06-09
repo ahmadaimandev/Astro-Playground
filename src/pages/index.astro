@@ -18,7 +18,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 					<h1>Welcome to my website!</h1>
 				</div>
 				<div class="subheading">
-					<h2>My name is Ahmad Aiman. I'm Frontend Developer</h2>
+					<h2>My name is Ahmad Aiman. I'm <span>Frontend Developer</span> From Malaysia</h2>
 				</div>
 			</div>
 			<div class="left-side">
@@ -30,10 +30,29 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<Footer />
 	</body>
 	<style>
+		h1 {
+			margin: 10px auto;
+			font-size: 2.5em;
+		}
+		h2 {
+			font-size: 1.5em;
+			text-transform: capitalize;
+		}
 		.user-image {
 			border: 1px solid black;
 			width: 400px;
 			height: 400px;
+		}
+		span {
+			color: #2337FF;
+			transition: 0.2s ease-in-out;
+			font-weight: bold;
+		}
+
+		span:hover {
+			color: #118fd8;
+			transition: 0.2s ease-in-out;
+			cursor: pointer;
 		}
 	</style>
 </html>
